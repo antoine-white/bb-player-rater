@@ -22,8 +22,8 @@ const Star = ({ type }: { type: StarFilledType }) => {
     >
       <defs>
         <linearGradient id="grad">
-          <stop offset="50%" stop-color="yellow" />
-          <stop offset="50%" stop-color="grey" />
+          <stop offset="50%" stopColor="yellow" />
+          <stop offset="50%" stopColor="grey" />
         </linearGradient>
       </defs>
       <path
