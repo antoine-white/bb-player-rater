@@ -1,9 +1,14 @@
 import Rating from "../../components/Rating/Rating";
 import StyledDetails from "../../components/StyledDetails/StyledDetails";
+import { Player } from "../../models/player";
 import { RatingType } from "../../models/rating";
 import "./SinglePlayer.css";
 
-export default function SinglePlayer() {
+export type SinglePlayerProps = {
+  player : Player
+}
+
+export default function SinglePlayer({player} : SinglePlayerProps) {
   return (
     <div id="single-player">
       <StyledDetails>

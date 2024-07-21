@@ -1,10 +1,11 @@
 import "./App.css";
+import PlayerMocks from "./mocks/player";
 import SinglePlayer from "./pages/SinglePlayer/SinglePlayer";
 
 function App() {
   return (
     <main>
-      <SinglePlayer />
+      <SinglePlayer player={PlayerMocks.player}/>
     </main>
   );
 }
