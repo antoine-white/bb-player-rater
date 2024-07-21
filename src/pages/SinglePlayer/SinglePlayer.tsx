@@ -1,5 +1,5 @@
-import Rating from "../../components/Rating/Rating";
-import StyledDetails from "../../components/StyledDetails/StyledDetails";
+import Rating from "../../components/ui/Rating/Rating";
+import StyledDetails from "../../components/ui/StyledDetails/StyledDetails";
 import PlayerProvider from "../../contexts/player/PlayerProvider";
 import { Player } from "../../models/player";
 import { RatingType } from "../../models/rating";

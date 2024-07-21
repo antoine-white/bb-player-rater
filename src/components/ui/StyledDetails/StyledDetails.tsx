@@ -1,5 +1,5 @@
 import React from "react";
-import { getChildrenOnDisplayName } from "../../utils/react";
+import { getChildrenOnDisplayName } from "../../../utils/react";
 import "./StyledDetails.css";
 
 function StyledDetails({ children }: React.PropsWithChildren) {

@@ -1,4 +1,4 @@
-import { Rating as RatingModel, RatingType } from "../../models/rating";
+import { Rating as RatingModel, RatingType } from "../../../models/rating";
 import NumberRating from "./NumberRating";
 import StarRating from "./StarsRating";
 
