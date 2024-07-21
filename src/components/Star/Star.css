@@ -1,0 +1,13 @@
+.star-rating {
+  display: inline-block;
+}
+
+.star {
+  width: 24px;
+  height: 24px;
+  fill: #ffc107; /* Default star color */
+}
+
+.star:not(:last-child) {
+  margin-right: 4px; /* Adjust spacing between stars */
+}

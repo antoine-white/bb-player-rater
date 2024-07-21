@@ -1,0 +1,35 @@
+.styled-details {
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Bigger shadow with color of the border */
+  margin-bottom: 16px;
+}
+
+.styled-details[open] {
+  box-shadow: 0px 8px 16px rgba(33, 150, 243, 0.3); /* Bigger shadow with color of the border */
+}
+
+.styled-details summary {
+  padding: 16px;
+  cursor: pointer;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: 2px solid #cccccc; /* Gray border when closed */
+}
+
+.styled-details[open] summary {
+  border-radius: 8px 8px 0 0;
+  border-color: rgb(33, 150, 243); /* Blue border when open */
+  border-bottom: 0;
+}
+
+.styled-details article {
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 0 0 8px 8px;
+  border: 2px solid #cccccc; /* Gray border when closed */
+  border-top: none; /* Remove top border when open */
+}
+
+.styled-details[open] article {
+  border-color: #2196f3; /* Blue border when open */
+}
