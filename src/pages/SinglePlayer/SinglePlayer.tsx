@@ -1,8 +1,7 @@
-import Rating from "../../components/ui/Rating/Rating";
-import StyledDetails from "../../components/ui/StyledDetails/StyledDetails";
+import PlayerCategoryRating from "../../components/business/PlayerCategoryRating/PlayerCategoryRating";
+import PlayerInfo from "../../components/business/PlayerInfo/PlayerInfo";
 import PlayerProvider from "../../contexts/player/PlayerProvider";
 import { Player } from "../../models/player";
-import { RatingType } from "../../models/rating";
 import "./SinglePlayer.css";
 
 export type SinglePlayerProps = {
@@ -13,12 +12,12 @@ export default function SinglePlayer({ player }: SinglePlayerProps) {
   return (
     <PlayerProvider value={player}>
       <div id="single-player">
-        <StyledDetails>
-          <StyledDetails.Summary>
-            Summary <Rating type={RatingType.Stars} value={50} />{" "}
-          </StyledDetails.Summary>
-          <StyledDetails.Body>Body</StyledDetails.Body>
-        </StyledDetails>
+        <PlayerInfo average={player.ratings.average} info={player.info} />
+        <>
+          {player.ratings.categories.map((category) => (
+            <PlayerCategoryRating key={category.categoryName} {...category} />
+          ))}
+        </>
       </div>
     </PlayerProvider>
   );
